@@ -11,7 +11,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
   const { t } = useTranslation()
   return (
     <BaseModal title={t('about')} isOpen={isOpen} handleClose={handleClose}>
-      <p className="text-sm text-gray-500">
+      <p className="text-l text-gray-500 bg-blanco border border-gray-300 rounded-lg">
         <Trans
           i18nKey="aboutAuthorSentence"
           values={{ language: CONFIG.language, author: CONFIG.author }}

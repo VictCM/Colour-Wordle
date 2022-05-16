@@ -1,0 +1,6 @@
+bucket         = "sdwan-fortinet-es-terraform-state-141729210500"
+key            = "main-terraform.tfstate"
+region         = "eu-west-1"
+dynamodb_table = "sdwan-fortinet-es-terraform-state-141729210500"
+encrypt        = true
+profile        = "141729210500_AWSSREAdministratorAccess"

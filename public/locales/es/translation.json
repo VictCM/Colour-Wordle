@@ -1,6 +1,6 @@
 {
     "about": "Acerca de este juego",
-    "gameName": "No Wordle - {{language}}",
+    "gameName": "Cuatre Casas wordle",
     "enterKey": "Enviar",
     "deleteKey": "Eliminar",
     "notEnoughLetters": "No hay suficientes letras",
@@ -94,8 +94,6 @@
     "aboutDataSentence": "Las palabras para este juego se obtuvieron de <1>{{wordListSource}}</1>. ",
     "aboutOriginalSentence": "También puedes jugar la original <1>aquí</1>",
     "languages": {
-        "en": "English",
-        "es": "Español",
-        "zh": "中文"
+        "es": "Español"
     }
 }

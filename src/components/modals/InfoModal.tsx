@@ -27,7 +27,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   })
   return (
     <BaseModal title={t('howToPlay')} isOpen={isOpen} handleClose={handleClose}>
-      <p className="text-sm text-gray-500">
+      <p className="text-l text-gray-500 bg-blanco border border-gray-300 rounded-lg">
         {t('instructions', { tries: CONFIG.tries })}
       </p>
 

@@ -45,7 +45,7 @@ export const StatsModal = ({
       handleClose={handleClose}
     >
       <StatBar gameStats={gameStats} />
-      <h4 className="text-lg leading-6 font-medium text-gray-900">
+      <h4 className="text-lg leading-6 bg-blanco font-medium text-gray-900">
         {t('guessDistribution')}
       </h4>
       <Histogram gameStats={gameStats} />

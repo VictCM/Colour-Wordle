@@ -1,0 +1,6 @@
+bucket         = "{{ s3_bucket_depending_on_country }}"
+key            = "main-terraform.tfstate"
+region         = "{{ region_depending_on_country }}"
+dynamodb_table = "{{ dynamo_tablet_depending_on_country }}"
+encrypt        = true
+profile        = "{{ account_depending_on_country }}_AWSSREAdministratorAccess"
