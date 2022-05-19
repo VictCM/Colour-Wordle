@@ -2,7 +2,7 @@ import { solution } from './words'
 import { ORTHOGRAPHY } from '../constants/orthography'
 import { ORTHOGRAPHY_PATTERN } from './tokenizer'
 
-export type CharStatus = 'absent' | 'present' | 'correct'
+export type CharStatus = 'absent' | 'present' | 'correct' | 'solved'
 
 export type CharValue = typeof ORTHOGRAPHY[number]
 

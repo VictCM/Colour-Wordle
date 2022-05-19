@@ -8,13 +8,13 @@ type Props = {
 
 export const Cell = ({ value, status }: Props) => {
   const classes = classnames(
-    'w-14 h-14 border-solid border-2 flex items-center justify-center mx-0.5 text-lg font-bold rounded',
+    'w-14 h-14 border-solid border-negro border-2 flex items-center justify-center mx-0.5 text-lg font-bold rounded text-blanco',
     {
-      'bg-white border-slate-200': !status,
+      'bg-white text-negro': !status,
       'border-black': value && !status,
-      'bg-gris text-white border-slate-400': status === 'absent',
-      'bg-coral text-white border-green-500': status === 'correct',
-      'bg-burdeos text-white border-yellow-500': status === 'present',
+      'bg-gris': status === 'absent',
+      'bg-coral': status === 'present',
+      'bg-burdeos': status === 'correct',
       'cell-animation': !!value,
     }
   )

@@ -6,6 +6,7 @@ module.exports = {
       burdeos: '#46001D',
       gris: '#979797',
       blanco: '#FFFFFF',
+      negro: '#000000',
     }
   },
   plugins: [],

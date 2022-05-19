@@ -1,7 +1,7 @@
 import { CONFIG } from './config'
 
 export const WORDS = [
-  'fluir',
+  'poder',
 ]
 
 if (CONFIG.normalization) {

@@ -1,6 +1,9 @@
 import { CONFIG } from './config'
 
 export const VALIDGUESSES = [
+  'pilar',
+  'mover',
+  'claro',
   'adaawḵ',
   'adixs',
   'algyax̱',
