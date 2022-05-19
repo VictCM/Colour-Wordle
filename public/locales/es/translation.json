@@ -1,6 +1,6 @@
 {
     "about": "Acerca de este juego",
-    "gameName": "Cuatre Casas wordle",
+    "gameName": "Cuatrecasas WordPRIDE",
     "enterKey": "Enviar",
     "deleteKey": "Eliminar",
     "notEnoughLetters": "No hay suficientes letras",
@@ -89,9 +89,9 @@
             "highlight": false
         }
     ],
-    "aboutAuthorSentence": "Este es un clon de código abierto del juego Wordle adaptado a {{language}} por <3>{{author}}</3>. ",
-    "aboutCodeSentence": "Echa un vistazo al <1>código original</1> de <3>Hannah Park</3> o echa un vistazo al <5>fork de Aidan Pine</5> y personalízalo para otro idioma. ",
-    "aboutDataSentence": "Las palabras para este juego se obtuvieron de <1>{{wordListSource}}</1>. ",
+    "aboutAuthorSentence": "Este es un clon de código abierto del juego Wordle adaptado para Cuatrecasas WordPRIDE. ",
+    "aboutCodeSentence": "",
+    "aboutDataSentence": "",
     "aboutOriginalSentence": "También puedes jugar la original <1>aquí</1>",
     "languages": {
         "es": "Español"

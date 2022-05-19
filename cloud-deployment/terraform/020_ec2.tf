@@ -50,7 +50,12 @@ resource "aws_instance" "ec2_instance" {
   provisioner "remote-exec" {
     inline = [
       "sudo apt update",
+      "sudo apt -y upgrade",
       "sudo apt install python -y",
+      "sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates",
+      "curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -",
+      "sudo apt -y install nodejs",
+      "sudo apt -y  install gcc g++ make",
     ]
   }
 
@@ -66,6 +71,22 @@ resource "aws_instance" "ec2_instance" {
       "Name" = "${var.project_name}-instance"
     },
   )
+}
+
+resource "null_resource" "copyProjectToInstance" {
+  provisioner "file" {
+    source      = "../../../Colour-Wordle/README.md"
+    destination = "/home/ubuntu/README.md"
+  }
+
+  connection {
+    type = "ssh"
+    user = "ubuntu"
+    host = aws_instance.ec2_instance.public_ip
+    private_key = "${file("data/magnetDev.pem")}"
+  }
+
+  depends_on = [aws_instance.ec2_instance]
 }
 
 module "icinga2_security_group" {
