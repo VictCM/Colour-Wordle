@@ -36,6 +36,7 @@ export const getStatuses = (
 export const getGuessStatuses = (guess: string[]): CharStatus[] => {
   const splitSolution = solution.split(ORTHOGRAPHY_PATTERN).filter((i) => i)
   const splitGuess = guess
+  var totalCorrect: number = 0
 
   const solutionCharsTaken = splitSolution.map((_) => false)
 
@@ -44,8 +45,14 @@ export const getGuessStatuses = (guess: string[]): CharStatus[] => {
   // handle all correct cases first
   splitGuess.forEach((letter, i) => {
     if (letter === splitSolution[i]) {
+      totalCorrect = totalCorrect + 1
       statuses[i] = 'correct'
       solutionCharsTaken[i] = true
+      if (totalCorrect === 5) {
+        splitGuess.forEach((letter, i) => {
+          statuses[i] = 'solved'
+        })
+      }
       return
     }
   })

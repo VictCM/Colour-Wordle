@@ -7,6 +7,7 @@ module.exports = {
       gris: '#979797',
       blanco: '#FFFFFF',
       negro: '#000000',
+      naranja: '#FF8C00',
     }
   },
   plugins: [],

@@ -21,9 +21,7 @@
     "bestStreak": "Mejor racha",
     "newWordCountdown": "Nueva palabra en",
     "winMessages": [
-        "¡Gran trabajo!",
-        "Increíble",
-        "¡Bien hecho!"
+        "¡Enhorabuena! La palabra escondida era PODER, Poder para ser quien eres."
     ],
     "firstExampleWord": [{
             "letter": "P",
@@ -88,10 +86,10 @@
             "highlight": false
         }
     ],
-    "aboutAuthorSentence": "Este es un clon de código abierto del juego Wordle adaptado para Cuatrecasas WordPRIDE. ",
+    "aboutAuthorSentence": "🏳️‍🌈 <3>‘PRIDE’</3> forma parte de nuestra filosofía de priorizar el talento y dar valor a las personas, sin importar cuestiones tales como identidad, expresión de género u orientación sexual. Significa avanzar unidos hacia una sociedad más inclusiva e igualitaria. Hoy y siempre, <3>¡todos somos PRIDE!</3>",
     "aboutCodeSentence": "",
     "aboutDataSentence": "",
-    "aboutOriginalSentence": "También puedes jugar la original <1>aquí</1>",
+    "aboutOriginalSentence": "",
     "languages": {
         "es": "Español"
     }

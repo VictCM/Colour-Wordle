@@ -15,6 +15,7 @@ export const Cell = ({ value, status }: Props) => {
       'bg-gris': status === 'absent',
       'bg-coral': status === 'present',
       'bg-burdeos': status === 'correct',
+      'bg-naranja': status === 'solved',
       'cell-animation': !!value,
     }
   )
