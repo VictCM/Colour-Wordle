@@ -31,7 +31,7 @@ locals {
 variable "aws_region" {
   description = "AWS Region"
   type        = string
-  default     = "eu-west-1"
+  default     = "eu-central-1"
 }
 
 variable "project_name" {
@@ -59,5 +59,5 @@ variable "ubuntu_account_number" {
 variable "instance_type" {
   description = "The size of instance to launch"
   type        = string
-  default     = "t3.large"
+  default     = "m5.large"
 }
