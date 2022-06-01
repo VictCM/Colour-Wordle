@@ -22,7 +22,7 @@ import '@bcgov/bc-sans/css/BCSans.css'
 import './i18n'
 import { withTranslation, WithTranslation } from 'react-i18next'
 
-const ALERT_TIME_MS = 2000
+const ALERT_TIME_MS = 10000
 
 const App: React.FC<WithTranslation> = ({ t, i18n }) => {
   const [currentGuess, setCurrentGuess] = useState<Array<string>>([])
