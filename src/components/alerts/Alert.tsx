@@ -10,7 +10,7 @@ type Props = {
 
 export const Alert = ({ isOpen, message, variant = 'warning' }: Props) => {
   const classes = classNames(
-    'fixed top-20 left-1/2 transform -translate-x-1/2 max-w-sm w-full shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden',
+    'fixed top-20 left-1/2 bg-blanco transform -translate-x-1/2 max-w-sm w-full shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden',
     {
       'bg-rose-200': variant === 'warning',
       'bg-green-200 z-20': variant === 'success',
@@ -21,10 +21,10 @@ export const Alert = ({ isOpen, message, variant = 'warning' }: Props) => {
     <Transition
       show={isOpen}
       as={Fragment}
-      enter="ease-out duration-300 transition"
+      enter="ease-out duration-600 transition"
       enterFrom="opacity-0"
       enterTo="opacity-100"
-      leave="transition ease-in duration-100"
+      leave="transition ease-in duration-600"
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
     >
