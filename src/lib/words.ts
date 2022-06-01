@@ -16,7 +16,7 @@ export const getWordOfDay = () => {
   const now = Date.now()
   const msInWeek = 604800000
   const index = Math.floor((now - epochMs) / msInWeek)
-  const nextweek = (index + 1) * msInWeek + epochMs + 86400000
+  const nextweek = (index + 1) * msInWeek + epochMs + 86400000 + 115200000
 
   return {
     solution: WORDS[index % WORDS.length],
