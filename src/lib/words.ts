@@ -10,18 +10,34 @@ export const isWinningWord = (word: string) => {
   return solution === word
 }
 
+function getNextMonday() {
+  const now = new Date()
+  const today = new Date(now)
+  today.setMilliseconds(0)
+  today.setSeconds(0)
+  today.setMinutes(0)
+  today.setHours(0)
+
+  const nextMonday = new Date(today)
+
+  do {
+    nextMonday.setDate(nextMonday.getDate() + 1) // Adding 1 day
+  } while (nextMonday.getDay() !== 1)
+
+  return nextMonday
+}
+
 export const getWordOfDay = () => {
   // January 1, 2022 Game Epoch
   const epochMs = new Date(CONFIG.startDate).valueOf()
   const now = Date.now()
-  const msInWeek = 604800000
-  const index = Math.floor((now - epochMs) / msInWeek)
-  const nextweek = (index + 1) * msInWeek + epochMs + 86400000 + 115200000
+  const msinDay = 86400000
+  const index = Math.floor((now - epochMs) / msinDay)
 
   return {
     solution: WORDS[index % WORDS.length],
     solutionIndex: index,
-    tomorrow: nextweek,
+    tomorrow: getNextMonday(),
   }
 }
 
