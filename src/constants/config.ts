@@ -1,7 +1,7 @@
 export const CONFIG = {
   tries: 6, // This changes how many tries you get to finish the wordle
   language: 'Español', // This changes the display name for your language
-  wordLength: 10, // This sets how long each word is based on how many characters (as defined in orthography.ts) are in each word
+  wordLength: 7, // This sets how long each word is based on how many characters (as defined in orthography.ts) are in each word
   author: 'CuatreCasas Wordle', // Put your name here so people know who made this Wordle!
   authorWebsite: '', // Put a link to your website or social media here
   wordListSource: '', // Describe the source material for your words here

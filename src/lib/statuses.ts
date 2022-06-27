@@ -48,7 +48,7 @@ export const getGuessStatuses = (guess: string[]): CharStatus[] => {
       totalCorrect = totalCorrect + 1
       statuses[i] = 'correct'
       solutionCharsTaken[i] = true
-      if (totalCorrect === 10) {
+      if (totalCorrect === 7) {
         splitGuess.forEach((letter, i) => {
           statuses[i] = 'solved'
         })
